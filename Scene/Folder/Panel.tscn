@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Script/Panel.gd" type="Script" id=1]
+[ext_resource path="res://Script/click me.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 96, 32 )
 
 [node name="ColorRect" type="ColorRect"]
 anchor_left = 0.078
@@ -25,24 +29,38 @@ margin_bottom = 0.103973
 text = "Close"
 
 [node name="Balok1" type="ColorRect" parent="."]
-anchor_left = 0.056
+anchor_left = 0.389
 anchor_top = 0.131
-anchor_right = 0.278
+anchor_right = 0.611
 anchor_bottom = 0.262
-margin_left = -0.383999
-margin_top = 0.0719948
-margin_right = -0.192001
-margin_bottom = 0.14399
+margin_left = -288.096
+margin_top = 0.0720024
+margin_right = -287.904
+margin_bottom = 0.144005
+
+[node name="Area2D" type="Area2D" parent="Balok1"]
+position = Vector2( 96, 32 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok1/Area2D"]
+shape = SubResource( 1 )
 
 [node name="Balok2" type="ColorRect" parent="."]
 anchor_left = 0.389
 anchor_top = 0.131
 anchor_right = 0.611
 anchor_bottom = 0.262
-margin_left = -0.0960083
-margin_top = 0.0719948
+margin_left = -0.0959778
+margin_top = 0.0720024
 margin_right = 0.0960083
-margin_bottom = 0.14399
+margin_bottom = 0.144005
+
+[node name="Area2D" type="Area2D" parent="Balok2"]
+position = Vector2( 96, 32 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok2/Area2D"]
+shape = SubResource( 1 )
 
 [node name="Balok3" type="ColorRect" parent="."]
 anchor_left = 0.722
@@ -54,6 +72,13 @@ margin_top = 0.0719948
 margin_right = 0.383972
 margin_bottom = 0.14399
 
+[node name="Area2D" type="Area2D" parent="Balok3"]
+position = Vector2( 96, 32 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok3/Area2D"]
+shape = SubResource( 1 )
+
 [node name="Balok4" type="ColorRect" parent="."]
 anchor_left = 0.056
 anchor_top = 0.426
@@ -64,11 +89,23 @@ margin_top = 0.111984
 margin_right = -0.192001
 margin_bottom = 0.18399
 
+[node name="Area2D" type="Area2D" parent="Balok4"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok4/Area2D"]
+shape = SubResource( 1 )
+
 [node name="Balok5" type="ColorRect" parent="."]
 margin_left = 336.0
 margin_top = 208.0
 margin_right = 528.0
 margin_bottom = 272.0
+
+[node name="Area2D" type="Area2D" parent="Balok5"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok5/Area2D"]
+shape = SubResource( 1 )
 
 [node name="Balok6" type="ColorRect" parent="."]
 margin_left = 624.0
@@ -76,11 +113,23 @@ margin_top = 208.0
 margin_right = 816.0
 margin_bottom = 272.0
 
+[node name="Area2D" type="Area2D" parent="Balok6"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok6/Area2D"]
+shape = SubResource( 1 )
+
 [node name="Balok7" type="ColorRect" parent="."]
 margin_left = 48.0
 margin_top = 344.0
 margin_right = 240.0
 margin_bottom = 408.0
+
+[node name="Area2D" type="Area2D" parent="Balok7"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok7/Area2D"]
+shape = SubResource( 1 )
 
 [node name="Balok8" type="ColorRect" parent="."]
 margin_left = 336.0
@@ -88,10 +137,28 @@ margin_top = 344.0
 margin_right = 528.0
 margin_bottom = 408.0
 
+[node name="Area2D" type="Area2D" parent="Balok8"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok8/Area2D"]
+shape = SubResource( 1 )
+
 [node name="Balok9" type="ColorRect" parent="."]
 margin_left = 624.0
 margin_top = 344.0
 margin_right = 816.0
 margin_bottom = 408.0
 
+[node name="Area2D" type="Area2D" parent="Balok9"]
+position = Vector2( 96, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok9/Area2D"]
+shape = SubResource( 1 )
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="input_event" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_mouse_exited"]
+[connection signal="input_event" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_mouse_exited"]
