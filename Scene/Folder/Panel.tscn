@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 96, 32 )
 
-[node name="ColorRect" type="ColorRect"]
+[node name="Panel" type="Control"]
 anchor_left = 0.078
 anchor_top = 0.107
 anchor_right = 0.922
@@ -14,55 +14,96 @@ anchor_bottom = 0.92
 margin_left = 0.127998
 margin_top = -0.200005
 margin_right = -0.128052
-color = Color( 0.639216, 0.235294, 0.235294, 1 )
+mouse_filter = 2
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Button" type="Button" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 6.10352e-05
+mouse_filter = 2
+color = Color( 0.639216, 0.235294, 0.235294, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="ColorRect"]
 anchor_left = 0.389
 anchor_top = 0.902
 anchor_right = 0.611
 anchor_bottom = 0.967
-margin_left = -0.0960388
-margin_top = -0.176025
-margin_right = 0.0960083
-margin_bottom = 0.103973
+margin_left = -0.0960083
+margin_top = 7.82404
+margin_right = 0.0960693
+margin_bottom = 8.10403
 text = "Close"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Balok1" type="ColorRect" parent="."]
-anchor_left = 0.389
+[node name="Balok1" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.056
 anchor_top = 0.131
-anchor_right = 0.611
+anchor_right = 0.278
 anchor_bottom = 0.262
-margin_left = -288.096
-margin_top = 0.0720024
-margin_right = -287.904
+margin_left = -0.384003
+margin_top = 0.0719948
+margin_right = -0.192001
 margin_bottom = 0.144005
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Area2D" type="Area2D" parent="Balok1"]
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok1"]
 position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok1/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok1/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok2" type="ColorRect" parent="."]
+[node name="Label" type="Label" parent="ColorRect/Balok1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Balok2" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.389
 anchor_top = 0.131
 anchor_right = 0.611
 anchor_bottom = 0.262
-margin_left = -0.0959778
+margin_left = -0.0960083
 margin_top = 0.0720024
 margin_right = 0.0960083
 margin_bottom = 0.144005
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Area2D" type="Area2D" parent="Balok2"]
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok2"]
 position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok2/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok2/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok3" type="ColorRect" parent="."]
+[node name="Label" type="Label" parent="ColorRect/Balok2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
+
+[node name="Balok3" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.722
 anchor_top = 0.131
 anchor_right = 0.944
@@ -71,94 +112,224 @@ margin_left = 0.192017
 margin_top = 0.0719948
 margin_right = 0.383972
 margin_bottom = 0.14399
+mouse_filter = 2
 
-[node name="Area2D" type="Area2D" parent="Balok3"]
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok3"]
 position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok3/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok3/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok4" type="ColorRect" parent="."]
+[node name="Label" type="Label" parent="ColorRect/Balok3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
+
+[node name="Balok4" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.056
-anchor_top = 0.426
+anchor_top = 0.459
 anchor_right = 0.278
-anchor_bottom = 0.557
-margin_left = -0.383999
-margin_top = 0.111984
+anchor_bottom = 0.59
+margin_left = -0.384003
+margin_top = 0.00799561
 margin_right = -0.192001
-margin_bottom = 0.18399
+margin_bottom = 0.0799866
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Area2D" type="Area2D" parent="Balok4"]
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok4"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok4/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok4/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok5" type="ColorRect" parent="."]
-margin_left = 336.0
-margin_top = 208.0
-margin_right = 528.0
-margin_bottom = 272.0
+[node name="Label" type="Label" parent="ColorRect/Balok4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
 
-[node name="Area2D" type="Area2D" parent="Balok5"]
+[node name="Balok5" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.389
+anchor_top = 0.459
+anchor_right = 0.611
+anchor_bottom = 0.59
+margin_left = -0.0960083
+margin_top = 0.00799561
+margin_right = 0.0960083
+margin_bottom = 0.0799866
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok5"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok5/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok5/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok6" type="ColorRect" parent="."]
-margin_left = 624.0
-margin_top = 208.0
-margin_right = 816.0
-margin_bottom = 272.0
+[node name="Label" type="Label" parent="ColorRect/Balok5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
 
-[node name="Area2D" type="Area2D" parent="Balok6"]
+[node name="Balok6" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.722
+anchor_top = 0.459
+anchor_right = 0.944
+anchor_bottom = 0.59
+margin_left = 0.191956
+margin_top = 0.00799561
+margin_right = 0.383972
+margin_bottom = 0.0799866
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok6"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok6/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok6/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok7" type="ColorRect" parent="."]
-margin_left = 48.0
-margin_top = 344.0
-margin_right = 240.0
-margin_bottom = 408.0
+[node name="Label" type="Label" parent="ColorRect/Balok6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
 
-[node name="Area2D" type="Area2D" parent="Balok7"]
+[node name="Balok7" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.056
+anchor_top = 0.721
+anchor_right = 0.278
+anchor_bottom = 0.852
+margin_left = -0.384003
+margin_top = 0.151978
+margin_right = -0.192001
+margin_bottom = 0.223969
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok7"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok7/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok7/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok8" type="ColorRect" parent="."]
-margin_left = 336.0
-margin_top = 344.0
-margin_right = 528.0
-margin_bottom = 408.0
+[node name="Label" type="Label" parent="ColorRect/Balok7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
 
-[node name="Area2D" type="Area2D" parent="Balok8"]
+[node name="Balok8" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.389
+anchor_top = 0.131
+anchor_right = 0.611
+anchor_bottom = 0.262
+margin_left = -0.0960083
+margin_top = 288.072
+margin_right = 0.0960083
+margin_bottom = 288.144
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok8"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok8/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok8/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Balok9" type="ColorRect" parent="."]
-margin_left = 624.0
-margin_top = 344.0
-margin_right = 816.0
-margin_bottom = 408.0
+[node name="Label" type="Label" parent="ColorRect/Balok8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
 
-[node name="Area2D" type="Area2D" parent="Balok9"]
+[node name="Balok9" type="ColorRect" parent="ColorRect"]
+anchor_left = 0.722
+anchor_top = 0.131
+anchor_right = 0.944
+anchor_bottom = 0.262
+margin_left = 0.192017
+margin_top = 288.072
+margin_right = 0.383972
+margin_bottom = 288.144
+mouse_filter = 2
+
+[node name="Area2D" type="Area2D" parent="ColorRect/Balok9"]
 position = Vector2( 96, 32 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balok9/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok9/Area2D"]
 shape = SubResource( 1 )
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
-[connection signal="input_event" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Balok1/Area2D" to="Balok1/Area2D" method="_on_Area2D_mouse_exited"]
-[connection signal="input_event" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Balok2/Area2D" to="Balok2/Area2D" method="_on_Area2D_mouse_exited"]
+[node name="Label" type="Label" parent="ColorRect/Balok9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -7.62939e-06
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_Button_pressed"]
+[connection signal="input_event" from="ColorRect/Balok1/Area2D" to="." method="_on_Balok1_input_event"]
+[connection signal="input_event" from="ColorRect/Balok1/Area2D" to="ColorRect/Balok1/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok1/Area2D" to="ColorRect/Balok1/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok1/Area2D" to="ColorRect/Balok1/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok2/Area2D" to="." method="_on_Balok2_input_event"]
+[connection signal="input_event" from="ColorRect/Balok2/Area2D" to="ColorRect/Balok2/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok2/Area2D" to="ColorRect/Balok2/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok2/Area2D" to="ColorRect/Balok2/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok3/Area2D" to="." method="_on_Balok3_input_event"]
+[connection signal="input_event" from="ColorRect/Balok3/Area2D" to="ColorRect/Balok3/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok3/Area2D" to="ColorRect/Balok3/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok3/Area2D" to="ColorRect/Balok3/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok4/Area2D" to="." method="_on_Balok4_input_event"]
+[connection signal="input_event" from="ColorRect/Balok4/Area2D" to="ColorRect/Balok4/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok4/Area2D" to="ColorRect/Balok4/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok4/Area2D" to="ColorRect/Balok4/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok5/Area2D" to="." method="_on_Balok5_input_event"]
+[connection signal="input_event" from="ColorRect/Balok5/Area2D" to="ColorRect/Balok5/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok5/Area2D" to="ColorRect/Balok5/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok5/Area2D" to="ColorRect/Balok5/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok6/Area2D" to="." method="_on_Balok6_input_event"]
+[connection signal="input_event" from="ColorRect/Balok6/Area2D" to="ColorRect/Balok6/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok6/Area2D" to="ColorRect/Balok6/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok6/Area2D" to="ColorRect/Balok6/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok7/Area2D" to="." method="_on_Balok7_input_event"]
+[connection signal="input_event" from="ColorRect/Balok7/Area2D" to="ColorRect/Balok7/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok7/Area2D" to="ColorRect/Balok7/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok7/Area2D" to="ColorRect/Balok7/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok8/Area2D" to="." method="_on_Balok8_input_event"]
+[connection signal="input_event" from="ColorRect/Balok8/Area2D" to="ColorRect/Balok8/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok8/Area2D" to="ColorRect/Balok8/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok8/Area2D" to="ColorRect/Balok8/Area2D" method="_on_Area2D_Panel_mouse_exited"]
+[connection signal="input_event" from="ColorRect/Balok9/Area2D" to="." method="_on_Balok9_input_event"]
+[connection signal="input_event" from="ColorRect/Balok9/Area2D" to="ColorRect/Balok9/Area2D" method="_on_Area2D_Panel_input_event"]
+[connection signal="mouse_entered" from="ColorRect/Balok9/Area2D" to="ColorRect/Balok9/Area2D" method="_on_Area2D_Panel_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Balok9/Area2D" to="ColorRect/Balok9/Area2D" method="_on_Area2D_Panel_mouse_exited"]

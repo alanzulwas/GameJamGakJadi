@@ -10,12 +10,14 @@ config_version=4
 
 [application]
 
-config/name="Satu"
+config/name="GameJamGakJadi"
 config/icon="res://icon.png"
 
 [autoload]
 
 cursor="*res://Script/Cursor.gd"
+inventoryScn="*res://Scene/Inventory.tscn"
+SelfInventory="*res://Script/SelfInventory.gd"
 
 [physics]
 

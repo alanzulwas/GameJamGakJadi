@@ -4,4 +4,4 @@
 
 [node name="Node" type="Node2D"]
 script = ExtResource( 1 )
-inventory = [ [ "y", "n", "n", "n", "y", "y", "y", "y", "n" ], [ "n", "n", "n", "y", "y", "y", "n", "n", "n" ], [ "y", "n", "n", "y", "y", "y", "n", "n", "y" ] ]
+inventory = [ [ [ "y", "kucing" ], [ "n", "" ], [ "n", "" ], [ "n", "" ], [ "y", "anjing" ], [ "y", "gajah" ], [ "y", "harimau" ], [ "y", "singa" ], [ "n", "" ] ], [ [ "n", "" ], [ "n", "" ], [ "n", "" ], [ "y", "kacamata" ], [ "y", "tas" ], [ "y", "topi" ], [ "n", "" ], [ "n", "" ], [ "n", "" ] ], [ [ "y", "ayah" ], [ "n", "" ], [ "n", "" ], [ "y", "ibu" ], [ "y", "kakak" ], [ "y", "adik" ], [ "n", "" ], [ "n", "" ], [ "y", "pacar" ] ] ]
