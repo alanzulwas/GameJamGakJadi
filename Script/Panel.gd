@@ -1,35 +1,39 @@
 extends Control
 
 var _kotak
+var inventory
+
+func _ready():
+	inventory = get_parent().get_parent().inventory
 
 func _isiKotak(angka):
-	if inventoryScn.inventory[angka][0][0] == "y" :
+	if inventory[angka][0][0] == "y" :
 		$ColorRect/Balok1.color = Color(0,0,0,1)
-		$ColorRect/Balok1/Label.text = inventoryScn.inventory[angka][0][1]
-	if inventoryScn.inventory[angka][1][0] == "y" :
+		$ColorRect/Balok1/Label.text = inventory[angka][0][1]
+	if inventory[angka][1][0] == "y" :
 		$ColorRect/Balok2.color = Color(0,0,0,1)
-		$ColorRect/Balok2/Label.text = inventoryScn.inventory[angka][1][1]
-	if inventoryScn.inventory[angka][2][0] == "y" :
+		$ColorRect/Balok2/Label.text = inventory[angka][1][1]
+	if inventory[angka][2][0] == "y" :
 		$ColorRect/Balok3.color = Color(0,0,0,1)
-		$ColorRect/Balok3/Label.text = inventoryScn.inventory[angka][2][1]
-	if inventoryScn.inventory[angka][3][0] == "y" :
+		$ColorRect/Balok3/Label.text = inventory[angka][2][1]
+	if inventory[angka][3][0] == "y" :
 		$ColorRect/Balok4.color = Color(0,0,0,1)
-		$ColorRect/Balok4/Label.text = inventoryScn.inventory[angka][3][1]
-	if inventoryScn.inventory[angka][4][0] == "y" :
+		$ColorRect/Balok4/Label.text = inventory[angka][3][1]
+	if inventory[angka][4][0] == "y" :
 		$ColorRect/Balok5.color = Color(0,0,0,1)
-		$ColorRect/Balok5/Label.text = inventoryScn.inventory[angka][4][1]
-	if inventoryScn.inventory[angka][5][0] == "y" :
+		$ColorRect/Balok5/Label.text = inventory[angka][4][1]
+	if inventory[angka][5][0] == "y" :
 		$ColorRect/Balok6.color = Color(0,0,0,1)
-		$ColorRect/Balok6/Label.text = inventoryScn.inventory[angka][5][1]
-	if inventoryScn.inventory[angka][6][0] == "y" :
+		$ColorRect/Balok6/Label.text = inventory[angka][5][1]
+	if inventory[angka][6][0] == "y" :
 		$ColorRect/Balok7.color = Color(0,0,0,1)
-		$ColorRect/Balok7/Label.text = inventoryScn.inventory[angka][6][1]
-	if inventoryScn.inventory[angka][7][0] == "y" :
+		$ColorRect/Balok7/Label.text = inventory[angka][6][1]
+	if inventory[angka][7][0] == "y" :
 		$ColorRect/Balok8.color = Color(0,0,0,1)
-		$ColorRect/Balok8/Label.text = inventoryScn.inventory[angka][7][1]
-	if inventoryScn.inventory[angka][8][0] == "y" :
+		$ColorRect/Balok8/Label.text = inventory[angka][7][1]
+	if inventory[angka][8][0] == "y" :
 		$ColorRect/Balok9.color = Color(0,0,0,1)
-		$ColorRect/Balok9/Label.text = inventoryScn.inventory[angka][8][1]
+		$ColorRect/Balok9/Label.text = inventory[angka][8][1]
 
 func _isiKotakDiambil(angka1,event):
 	var angka
@@ -43,9 +47,9 @@ func _isiKotakDiambil(angka1,event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			if len(SelfInventory.inventory) < 5:
-				if inventoryScn.inventory[angka][angka1][0] == "y" :
-					inventoryScn.inventory[angka][angka1][0] = "n"
-					SelfInventory.inventory.append(inventoryScn.inventory[angka][angka1][1])
+				if inventory[angka][angka1][0] == "y" :
+					inventory[angka][angka1][0] = "n"
+					SelfInventory.inventory.append(inventory[angka][angka1][1])
 			set_visible(false)
 
 func _initIsi():
