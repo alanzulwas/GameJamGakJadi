@@ -11,6 +11,12 @@ func _ready():
 	isKotak = false
 	parent = self.get_parent().name
 
+
+
+
+
+
+#=========================================== Cursor Customization ===================================
 func _clicked(kotak):
 	if kotak == "Area2D1" :
 		get_node("/root/"+parent+"/Panel/ColorRect")._kotak = "kotak1"
