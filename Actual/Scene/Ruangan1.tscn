@@ -1,10 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Actual/Asset/Tilemap/TileMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/TileMap/16x48.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/TileMap/16x16.tscn" type="PackedScene" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="TileMap" parent="." instance=ExtResource( 1 )]
-cell_size = Vector2( 48, 32 )
+[node name="16x16" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 589824, 20, 0, 589825, 21, 0, 589826, 21, 0, 589827, 21, 0, 589828, 21, 0, 589829, 21, 0, 589830, 21, 0, 589831, 21, 0, 589832, 21, 0, 589833, 21, 0, 589834, 21, 0, 589835, 21, 0, 589836, 21, 0, 589837, 21, 0, 589838, 21, 0, 589839, 21, 0, 589840, 21, 0, 589841, 21, 0, 589842, 21, 0, 589843, 21, 0, 589844, 21, 0, 589845, 21, 0, 589846, 21, 0, 589847, 21, 0, 589848, 21, 0, 589849, 21, 0, 589850, 21, 0, 589851, 21, 0, 589852, 21, 0, 589853, 21, 0, 589854, 21, 0, 589855, 21, 0, 589856, 21, 0, 589857, 21, 0, 589858, 21, 0, 589859, 21, 0, 589860, 21, 0, 589861, 21, 0, 589862, 21, 0, 589863, 22, 0, 655367, 25, 0, 655378, 25, 0, 655388, 25, 0, 983049, 24, 0, 983060, 24, 0, 983070, 24, 0, 1048587, 2, 0, 1048598, 1, 0, 1048608, 0, 0 )
+
+[node name="16x48" parent="." instance=ExtResource( 1 )]
+tile_data = PoolIntArray( 327717, 0, 0 )
