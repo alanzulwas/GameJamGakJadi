@@ -21,6 +21,9 @@ margin_right = -1024.0
 margin_bottom = -600.0
 mouse_filter = 2
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 inventory = [ [ [ "y", "kucing" ], [ "n", "" ], [ "n", "" ], [ "n", "" ], [ "y", "anjing" ], [ "y", "tapir" ], [ "y", "harimau" ], [ "y", "singa" ], [ "n", "" ] ], [ [ "n", "" ], [ "n", "" ], [ "n", "" ], [ "y", "kacamata" ], [ "y", "tas" ], [ "y", "topi" ], [ "n", "" ], [ "n", "" ], [ "n", "" ] ], [ [ "y", "ayah" ], [ "n", "" ], [ "n", "" ], [ "y", "ibu" ], [ "y", "kakak" ], [ "y", "adik" ], [ "n", "" ], [ "n", "" ], [ "y", "pacar" ] ] ]
 
 [node name="Area2D1" type="Area2D" parent="."]

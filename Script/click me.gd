@@ -7,13 +7,8 @@ var parent
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Input.set_custom_mouse_cursor(cursor.cursor1, Input.CURSOR_ARROW, Vector2(8,8))
 	isKotak = false
 	parent = self.get_parent().name
-
-
-
-
 
 
 #=========================================== Cursor Customization ===================================

@@ -17,7 +17,9 @@ config/icon="res://icon.png"
 
 cursor="*res://Script/Cursor.gd"
 inventoryScn="*res://Scene/Inventory.tscn"
-SelfInventory="*res://Script/SelfInventory.gd"
+SelfInventory="res://Script/SelfInventory.gd"
+selfInventory="*res://Actual/Script/selfInventory.gd"
+RoomObject="*res://Actual/Scene/roomObject.tscn"
 
 [display]
 

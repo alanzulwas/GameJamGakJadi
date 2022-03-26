@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Actual/Script/roomObject.gd" type="Script" id=1]
+
+[node name="roomObject" type="Node2D"]
+script = ExtResource( 1 )
+inventory = [ [ "Ruangan1", [ [ "A1", "y" ], [ "A2", "y" ], [ "A3", "y" ], [ "A4", "y" ], [ "O1", "y" ], [ "O2", "y" ] ] ], [ "Ruangan2", [ [ "B1", "y" ], [ "B2", "y" ], [ "B3", "y" ], [ "B4", "y" ], [ "O1", "y" ], [ "O2", "y" ] ] ] ]

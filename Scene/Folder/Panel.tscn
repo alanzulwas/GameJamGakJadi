@@ -4,7 +4,7 @@
 [ext_resource path="res://Script/click me.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 96, 32 )
+extents = Vector2( 60, 20 )
 
 [node name="Panel" type="Control"]
 anchor_left = 0.078
@@ -63,6 +63,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok1/Area2D"]
+position = Vector2( -35.8986, -12.7593 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok1"]
@@ -94,6 +95,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok2/Area2D"]
+position = Vector2( -35.9747, -12.7593 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok2"]
@@ -119,6 +121,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok3/Area2D"]
+position = Vector2( -36.0508, -12.7593 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok3"]
@@ -127,6 +130,9 @@ anchor_bottom = 1.0
 margin_bottom = -7.62939e-06
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Balok4" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.056
@@ -147,6 +153,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok4/Area2D"]
+position = Vector2( -35.9493, -12.38 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok4"]
@@ -175,6 +182,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok5/Area2D"]
+position = Vector2( -35.9747, -12.7599 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok5"]
@@ -183,6 +191,9 @@ anchor_bottom = 1.0
 margin_bottom = -7.62939e-06
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Balok6" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.722
@@ -203,6 +214,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok6/Area2D"]
+position = Vector2( -36.0507, -12.7599 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok6"]
@@ -231,6 +243,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok7/Area2D"]
+position = Vector2( -35.8986, -13.6385 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok7"]
@@ -239,16 +252,19 @@ anchor_bottom = 1.0
 margin_bottom = -7.62939e-06
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Balok8" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.389
 anchor_top = 0.131
 anchor_right = 0.611
 anchor_bottom = 0.262
-margin_left = -0.0960083
-margin_top = 288.072
-margin_right = 0.0960083
-margin_bottom = 288.144
+margin_left = 3.92932
+margin_top = 171.313
+margin_right = 4.12134
+margin_bottom = 171.385
 mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
@@ -259,6 +275,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok8/Area2D"]
+position = Vector2( -35.9747, -12.7593 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok8"]
@@ -267,16 +284,19 @@ anchor_bottom = 1.0
 margin_bottom = -7.62939e-06
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Balok9" type="ColorRect" parent="ColorRect"]
 anchor_left = 0.722
 anchor_top = 0.131
 anchor_right = 0.944
 anchor_bottom = 0.262
-margin_left = 0.192017
-margin_top = 288.072
-margin_right = 0.383972
-margin_bottom = 288.144
+margin_left = 0.141235
+margin_top = 171.313
+margin_right = 0.333191
+margin_bottom = 171.385
 mouse_filter = 2
 
 [node name="Area2D" type="Area2D" parent="ColorRect/Balok9"]
@@ -284,6 +304,7 @@ position = Vector2( 96, 32 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Balok9/Area2D"]
+position = Vector2( -36.0508, -12.7593 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="ColorRect/Balok9"]

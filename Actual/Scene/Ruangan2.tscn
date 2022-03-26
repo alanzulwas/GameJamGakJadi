@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Asset/TileMap/16x48.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Asset/TileMap/16x16.tscn" type="PackedScene" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://icon.png" type="Texture" id=10]
 [ext_resource path="res://Actual/Script/CursorBehaviour.gd" type="Script" id=11]
 [ext_resource path="res://Actual/Script/theRoom.gd" type="Script" id=12]
-[ext_resource path="res://Actual/Script/checkObject.gd" type="Script" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 7.01668 )
@@ -23,7 +22,7 @@ extents = Vector2( 32, 32 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 2, 32 )
 
-[node name="Ruangan1" type="Control"]
+[node name="Ruangan2" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -62,24 +61,24 @@ tile_data = PoolIntArray( 589824, 20, 0, 589825, 21, 0, 589826, 21, 0, 589827, 2
 [node name="16x48" parent="Tile" instance=ExtResource( 1 )]
 tile_data = PoolIntArray( 327690, 6, 0, 327699, 6, 0, 327711, 6, 0, 327717, 0, 0 )
 
-[node name="A1" type="Sprite" parent="."]
+[node name="B1" type="Sprite" parent="."]
 visible = false
-position = Vector2( 200, 256 )
+position = Vector2( 168, 208 )
 scale = Vector2( 1, 1.14286 )
 texture = ExtResource( 7 )
 hframes = 32
 vframes = 8
 frame = 9
 
-[node name="Area2D" type="Area2D" parent="A1"]
+[node name="Area2D" type="Area2D" parent="B1"]
 position = Vector2( 0, 3.05176e-05 )
 script = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="A1/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="B1/Area2D"]
 position = Vector2( 0, -3.05176e-05 )
 shape = SubResource( 1 )
 
-[node name="Label" type="Label" parent="A1"]
+[node name="Label" type="Label" parent="B1"]
 anchor_top = -0.5
 anchor_right = 1.062
 anchor_bottom = 0.5
@@ -91,24 +90,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="A2" type="Sprite" parent="."]
+[node name="B2" type="Sprite" parent="."]
 visible = false
-position = Vector2( 296, 224 )
+position = Vector2( 184, 312 )
 scale = Vector2( 1, 1.14286 )
 texture = ExtResource( 7 )
 hframes = 32
 vframes = 8
 frame = 9
 
-[node name="Area2D" type="Area2D" parent="A2"]
+[node name="Area2D" type="Area2D" parent="B2"]
 position = Vector2( 0, 3.05176e-05 )
 script = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="A2/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="B2/Area2D"]
 position = Vector2( 0, -3.05176e-05 )
 shape = SubResource( 1 )
 
-[node name="Label" type="Label" parent="A2"]
+[node name="Label" type="Label" parent="B2"]
 anchor_top = -0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
@@ -120,24 +119,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="A3" type="Sprite" parent="."]
+[node name="B3" type="Sprite" parent="."]
 visible = false
-position = Vector2( 464, 248 )
+position = Vector2( 384, 184 )
 scale = Vector2( 1, 1.14286 )
 texture = ExtResource( 7 )
 hframes = 32
 vframes = 8
 frame = 9
 
-[node name="Area2D" type="Area2D" parent="A3"]
+[node name="Area2D" type="Area2D" parent="B3"]
 position = Vector2( 0, 3.05176e-05 )
 script = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="A3/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="B3/Area2D"]
 position = Vector2( 0, -3.05176e-05 )
 shape = SubResource( 1 )
 
-[node name="Label" type="Label" parent="A3"]
+[node name="Label" type="Label" parent="B3"]
 anchor_top = -0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
@@ -149,24 +148,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="A4" type="Sprite" parent="."]
+[node name="B4" type="Sprite" parent="."]
 visible = false
-position = Vector2( 560, 200 )
+position = Vector2( 600, 280 )
 scale = Vector2( 1, 1.14286 )
 texture = ExtResource( 7 )
 hframes = 32
 vframes = 8
 frame = 9
 
-[node name="Area2D" type="Area2D" parent="A4"]
+[node name="Area2D" type="Area2D" parent="B4"]
 position = Vector2( 0, 3.05176e-05 )
 script = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="A4/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="B4/Area2D"]
 position = Vector2( 0, -3.05176e-05 )
 shape = SubResource( 1 )
 
-[node name="Label" type="Label" parent="A4"]
+[node name="Label" type="Label" parent="B4"]
 anchor_top = -0.5
 anchor_right = 1.062
 anchor_bottom = 0.5
@@ -179,10 +178,9 @@ __meta__ = {
 }
 
 [node name="O1" type="Sprite" parent="."]
-position = Vector2( 136, 268 )
+position = Vector2( 256, 272 )
 scale = Vector2( 0.25, 0.625 )
 texture = ExtResource( 10 )
-script = ExtResource( 13 )
 
 [node name="Area2D" type="Area2D" parent="O1"]
 script = ExtResource( 11 )
@@ -204,7 +202,7 @@ __meta__ = {
 }
 
 [node name="O2" type="Sprite" parent="."]
-position = Vector2( 568, 268 )
+position = Vector2( 368, 272 )
 scale = Vector2( 0.25, 0.625 )
 texture = ExtResource( 10 )
 
@@ -227,11 +225,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Ruangan2" type="Area2D" parent="."]
+[node name="Ruangan1" type="Area2D" parent="."]
 position = Vector2( 628, 257 )
 script = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ruangan2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ruangan1"]
 position = Vector2( 0, -1 )
 shape = SubResource( 3 )
 
@@ -244,23 +242,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="input_event" from="A1/Area2D" to="A1/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="A1/Area2D" to="A1/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="A1/Area2D" to="A1/Area2D" method="_on_Area2D_mouse_exited"]
-[connection signal="input_event" from="A2/Area2D" to="A2/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="A2/Area2D" to="A2/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="A2/Area2D" to="A2/Area2D" method="_on_Area2D_mouse_exited"]
-[connection signal="input_event" from="A3/Area2D" to="A3/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="A3/Area2D" to="A3/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="input_event" from="A4/Area2D" to="A4/Area2D" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="A4/Area2D" to="A4/Area2D" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="A4/Area2D" to="A4/Area2D" method="_on_Area2D_mouse_exited"]
+[connection signal="input_event" from="B1/Area2D" to="B1/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="B1/Area2D" to="B1/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="B1/Area2D" to="B1/Area2D" method="_on_Area2D_mouse_exited"]
+[connection signal="input_event" from="B2/Area2D" to="B2/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="B2/Area2D" to="B2/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="B2/Area2D" to="B2/Area2D" method="_on_Area2D_mouse_exited"]
+[connection signal="input_event" from="B3/Area2D" to="B3/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="B3/Area2D" to="B3/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="input_event" from="B4/Area2D" to="B4/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="B4/Area2D" to="B4/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="B4/Area2D" to="B4/Area2D" method="_on_Area2D_mouse_exited"]
 [connection signal="input_event" from="O1/Area2D" to="O1/Area2D" method="_on_Area2D_input_event"]
 [connection signal="mouse_entered" from="O1/Area2D" to="O1/Area2D" method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="O1/Area2D" to="O1/Area2D" method="_on_Area2D_mouse_exited"]
 [connection signal="input_event" from="O2/Area2D" to="O2/Area2D" method="_on_Area2D_input_event"]
 [connection signal="mouse_entered" from="O2/Area2D" to="O2/Area2D" method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="O2/Area2D" to="O2/Area2D" method="_on_Area2D_mouse_exited"]
-[connection signal="input_event" from="Ruangan2" to="Ruangan2" method="_on_Area2D_input_event"]
-[connection signal="mouse_entered" from="Ruangan2" to="Ruangan2" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Ruangan2" to="Ruangan2" method="_on_Area2D_mouse_exited"]
+[connection signal="input_event" from="Ruangan1" to="Ruangan1" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Ruangan1" to="Ruangan1" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Ruangan1" to="Ruangan1" method="_on_Area2D_mouse_exited"]
