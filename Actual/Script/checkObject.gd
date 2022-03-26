@@ -1,6 +1,6 @@
 extends Sprite
 var dapat
-var hasil = ["A1","B2","B3","D4","B4"]
+var hasil = ["A1","B2","B3","C4","B4"]
 
 func _ready():
 	dapat = 0
